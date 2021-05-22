@@ -1,0 +1,213 @@
+.main-content {
+  .row {
+    margin: 0;
+  }
+}
+
+.form-container {
+  padding: 10px;
+  height: 100%;
+
+  .quote-id {
+    align-items: center;
+    margin-bottom: 0 !important;
+
+    label {
+      font-size: 16px;
+      font-weight: bold;
+      color: #ff2323;
+      margin: 0;
+    }
+
+    input.form-control {
+      border: none !important;
+      box-shadow: none;
+      font-size: 16px;
+      font-weight: bold;
+      color: #ff2323;
+      padding: 0;
+    }
+  }
+
+  span.form-error {
+    font-weight: normal;
+    font-size: 10px;
+    color: #ee2828;
+  }
+
+  input, textarea, select {
+    &.form-control {
+      border-color: #a0a0a0 !important;
+      color: #000;
+      background-color: #c0c0c0 !important;
+      border-radius: 0;
+      height: 25px !important;
+      font-size: 12px;
+      box-shadow: inset -1px -1px 0px 0px #fff;
+    }
+  }
+
+  .btn.btn-primary {
+    width: 100%;
+    background: #c0c0c0;
+    border: 1px solid #a0a0a0;
+    border-radius: 0;
+    color: #000;
+    box-shadow: inset -1px -1px 0px 0px #fff !important;
+  }
+
+  .btn.btn-danger {
+    background: transparent;
+    border: none;
+    font-size: 12px;
+    color: #000;
+  }
+
+  .required:after {
+    position: absolute;
+  }
+
+  textarea {
+    &.form-control {
+      height: 300px !important;
+      background: #fff !important;
+      border-color: #000 !important;
+    }
+
+    &.h-80 {
+      height: 80px !important;
+    }
+  }
+
+  .row {
+    margin:0 -5px -5px !important;
+  }
+  .col-xsmall, .col-xsmall-1, .col-xsmall-2, .col-xsmall-3, .col-xsmall-4, .col-xsmall-5, .col-xsmall-6, .col-xsmall-7, .col-xsmall-8, .col-xsmall-9, .col-xsmall-10, .col-xsmall-11, .col-xsmall-12 {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 6px;
+  }
+
+  .col-small, .col-small-1, .col-small-2, .col-small-3, .col-small-4, .col-small-5, .col-small-6, .col-small-7, .col-small-8, .col-small-9, .col-small-10, .col-small-11, .col-small-12 {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 6px;
+  }
+
+  .portlet {
+    padding: 0;
+  }
+
+  label {
+    font-size: 11px;
+
+    &.required {
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  .m-portlet {
+    position: relative;
+    background: #c0c0c0;
+    border: 1px solid #000;
+  }
+
+  .table-wrap {
+    position: relative;
+
+    .m-portlet__head {
+      position: absolute;
+      bottom: 0;
+    }
+
+    .m-portlet__head .m-portlet__head-caption .m-portlet__head-title .m-portlet__head-text {
+      padding: 5px;
+      background: #000;
+      color: #fff;
+      font-size: 12px;
+    }
+
+    .m-portlet__body {
+      padding-bottom: 35px !important;
+      height: 180px;
+    }
+
+    .form-control {
+      background: #fff !important;
+    }
+
+    .table {
+
+      &.table-bordered {
+        td {
+          border: 1px solid #000;
+          background: #fff;
+          box-shadow: 1px 1px 0 0 #000;
+        }
+      }
+      td {
+        padding: 0 5px;
+        color: #000;
+        font-size: 12px;
+        width: 17%;
+        border: 1px solid #a0a0a0;
+        background: #c0c0c0;
+        box-shadow: 1px 1px 0 0 #fff;
+        position: relative;
+      }
+    }
+  }
+
+  .btn.btn-success {
+    border-radius: 0;
+    padding: 8px 20px;
+    margin-top: 10px;
+    box-shadow: inset -1px -1px 0 0 #fff !important;
+    background: silver;
+    color: #000;
+    border-color: #a0a0a0;
+    font-size: 12px;
+  }
+
+  .btn.btn-primary.auto-code-btn {
+    width: auto;
+    position: absolute;
+    top: 190px;
+    left: 5px;
+    background: #fff url("../../../../images/dashboard/ic_auto-code-bg.png") no-repeat center/contain;
+    color: transparent;
+    border: 1px solid #fff;
+    border-radius: 0;
+    font-size: 10px;
+    padding: 10px 2px;
+    box-shadow: 1px 1px 0 0 #000 !important;
+  }
+
+  .m-portlet .m-portlet__head .m-portlet__head-caption .m-portlet__head-title .m-portlet__head-text {
+    font-size: 10px;
+    font-weight: normal;
+
+    small {
+      font-size: inherit;
+      color: transparent;
+    }
+  }
+}
+
+.row.m-0 {
+  margin: 0 !important;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

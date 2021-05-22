@@ -1,0 +1,45 @@
+@import "~vue-multiselect/dist/vue-multiselect.min.css";
+
+.multiselect--active .multiselect__input {
+  width: 100% !important;
+}
+
+.multiselect {
+  font-size: 12px;
+  min-height: 30px;
+  height: 30px;
+
+  &__single {
+    padding-top: 5px;
+    font-size: 12px;
+  }
+
+  &__tag {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  &__tags {
+    padding-top: 0px;
+    min-height: 30px;
+  }
+
+  &__select {
+    height: 30px;
+  }
+
+  &__placeholder {
+    margin: 5px 0 5px 5px;
+  }
+
+  &__input, &__single {
+    margin: 0;
+    font-size: 12px;
+  }
+
+  &__option {
+    min-height: 30px;
+    padding: 10px;
+  }
+}
+

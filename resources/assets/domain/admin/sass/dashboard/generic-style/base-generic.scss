@@ -1,0 +1,62 @@
+//Custom-google-fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+/* Remove padding and margin */
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font: normal 16px/1.5 $base-font-family;
+  color: $base-text-color;
+  background: $main-background;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+* html .clearfix {
+  zoom: 1;
+}
+
+/* IE6 */
+*:first-child + html .clearfix {
+  zoom: 1;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.m-grid__item {
+  .row {
+    margin: 0;
+  }
+}
+
+.main-content {
+  background: #008080;
+}
+
+

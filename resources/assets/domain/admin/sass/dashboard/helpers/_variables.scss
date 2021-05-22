@@ -1,0 +1,84 @@
+//Custom-google-fonts
+//Source-sans-pro
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Poppins:300,400,500,600,700');
+//Dosis
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+//Color-palette
+$dark-black: #000;
+$black: #4A4A4A;
+$grey: #ccc;
+$light-grey: #d4d4d4;
+$white: #fff;
+$yellow: #ff0;
+$dark-green: #00ff2b;
+$green: #8bc34a;
+$light-green: #00C894;
+$blue: #00AEFF;
+$dark-blue: #162e54;
+$orange: #f87d09;
+$pink: #e91e63;
+$dark-pink: #E02386;
+$purple: #9c27b0;
+$light-purple: #efedff;
+
+//InitialValues
+$text-color: $black;
+$link-color: $dark-green;
+$link-color-hover: lighten($dark-green, 0.3);
+
+//Brand-Color
+$brand-color: $dark-pink;
+
+//Secondary-Color
+$secondary-color: $blue;
+
+//Typo-Color
+$typo-color: $dark-blue;
+
+//Base-Brand-Color
+$base-brand-color: $brand-color;
+
+//Base-Secondary-Color
+$base-secondary-color: $secondary-color;
+
+//Base-Text-Color
+$base-text-color: $text-color;
+
+//Base-Link-Color
+$base-link-color: $link-color;
+$base-link-color-hover: $link-color-hover;
+
+//Base-Typo-Color
+$base-typo-color: $typo-color;
+
+//Body
+$main-background: $dark-black;
+
+//Buttons
+//Buttons-Types
+$button-primary-bg-color: $black;
+$button-info-bg-color: $blue;
+$button-danger-bg-color: $dark-pink;
+$button-warning-bg-color: $orange;
+$button-success-bg-color: $green;
+
+//Buttons-Size
+$button-padding-vertical: 10px;
+$button-padding-horizontal: 15px;
+
+// Typography
+$base-font-family: 'Source Sans Pro', sans-serif;
+$base-title-font: 'Dosis', sans-serif;
+
+// Tooltips
+//Primary-color
+$tooltip-base-text-color: $white;
+$tooltip-base-bg-color: $black;
+$tooltip-base-border-color: $black;
+//Types
+$tooltip-invert-bg-color: $grey;
+$tooltip-success-bg-color: $green;
+$tooltip-info-bg-color: $blue;
+$tooltip-warning-bg-color: $orange;
+$tooltip-danger-bg-color: $dark-pink;

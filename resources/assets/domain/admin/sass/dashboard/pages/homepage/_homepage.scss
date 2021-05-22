@@ -1,0 +1,499 @@
+.banner {
+  padding: 15px 0;
+}
+
+.dashboard-content {
+  height: 630px;
+  width: 1200px;
+}
+
+.list-wrap {
+  text-align: center;
+
+  .list-content {
+    width: 100%;
+    position: relative;
+  }
+
+  img {
+    margin: 0 auto;
+    height: 40px;
+  }
+
+  .link {
+    a {
+      color: #00de00;
+      text-decoration: none;
+      font-size: 14px;
+
+      &:hover, &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.arrow {
+  &:after {
+    content: '';
+    background-repeat: no-repeat;
+    display: inline-block;
+  }
+
+  &.arrow-down {
+    &:after {
+      background-image: url("../../../../images/dashboard/ic_arrow-down.png");
+      width: 28px;
+      height: 70px;
+    }
+  }
+
+  &.arrow-up {
+    &:before {
+      background-image: url("../../../../images/dashboard/ic_arrow-down.png");
+      width: 28px;
+      height: 70px;
+      content: '';
+      background-repeat: no-repeat;
+      display: inline-block;
+      transform: rotate(180deg);
+      background-size: 100% 45px;
+    }
+
+    &:after {
+      display: none;
+    }
+  }
+
+  &.arrow-up-left-large {
+    &:before {
+      background-image: url("../../../../images/dashboard/ic_arrow-down-large.png");
+      width: 28px;
+      height: 222px;
+      content: '';
+      background-repeat: no-repeat;
+      background-position: top;
+      display: inline-block;
+      transform: rotate(135deg);
+      position: absolute;
+      top: -200px;
+      margin: 0 auto;
+      left: -45px;
+    }
+    &:after {
+      display: none;
+    }
+  }
+
+  &.arrow-up-small {
+    &:before {
+      background-image: url("../../../../images/dashboard/ic_arrow-up-small.png");
+      width: 28px;
+      height: 40px;
+      content: '';
+      background-repeat: no-repeat;
+      display: inline-block;
+    }
+    &:after {
+      display: none;
+    }
+  }
+
+  &.arrow-right-medium {
+    &:after {
+      background-image: url("../../../../images/dashboard/ic_arrow-left-medium.png");
+      width: 180px;
+      height: 32px;
+      transform: rotate(180deg);
+      position: absolute;
+      top: 10px;
+      right: -180px;
+      background-size: 180px;
+      background-position: center;
+    }
+  }
+
+  &.arrow-right-small {
+    &:after {
+      background-image: url("../../../../images/dashboard/ic_arrow-up-small.png");
+      width: 28px;
+      height: 40px;
+      transform: rotate(90deg);
+      position: absolute;
+      top: 0px;
+      right: -25px;
+    }
+  }
+
+  &.arrow-up-right {
+    &:after {
+      background-image: url("../../../../images/dashboard/ic_arrow-down.png");
+      width: 28px;
+      height: 65px;
+      transform: rotate(-135deg);
+      position: absolute;
+      top: -15px;
+      right: -25px;
+    }
+
+    &.contractors {
+      padding-top: 50px;
+      &:after {
+        left: 60px;
+      }
+    }
+
+    &.templates {
+      &:after {
+        top: -65px !important;
+      }
+    }
+
+    &.payables {
+      padding-top: 50px;
+      &:after {
+        transform: rotate(135deg);
+        left: 0;
+      }
+    }
+
+  }
+
+  &.arrow-top-left-bi {
+
+    &:before, &:after {
+      width: 28px;
+      height: 70px;
+      background-image: url("../../../../images/dashboard/ic_arrow-bidirectional.png");
+      position: absolute;
+      top: -35px;
+      content: '';
+      background-repeat: no-repeat;
+      display: inline-block;
+    }
+    &:before {
+      transform: rotate(-60deg);
+      left: -10px;
+    }
+    &:after {
+      transform: rotate(60deg);
+      right: -25px;
+    }
+  }
+
+  &.arrow-bottom-right {
+    &:after {
+      background-image: url("../../../../images/dashboard/ic_arrow-down.png");
+      width: 28px;
+      height: 65px;
+      transform: rotate(-45deg);
+      position: absolute;
+      bottom: -50px;
+      right: -25px;
+    }
+  }
+
+  &.arrow-left {
+    &:after {
+      background-image: url("../../../../images/dashboard/ic_arrow-left.png");
+      width: 70px;
+      height: 28px;
+      position: absolute;
+      left: -40px;
+      top: 6px;
+    }
+  }
+
+  &.arrow-left-medium {
+    &:after {
+      background-image: url("../../../../images/dashboard/ic_arrow-left-medium.png");
+      width: 135px;
+      height: 28px;
+      position: absolute;
+      left: -135px;
+      top: 20px;
+    }
+  }
+
+  &.arrow-down-large {
+    &:after {
+      background-image: url("../../../../images/dashboard/ic_arrow-down-large.png");
+      background-position: top center;
+      background-size: 100% 190px;
+      width: 28px;
+      height: 255px;
+    }
+  }
+}
+
+.bookings, .supplier, .stock {
+  &.arrow-right {
+    &:after {
+      background-image: url("../../../../images/dashboard/ic_arrow-down.png");
+      width: 28px;
+      height: 64px;
+      transform: rotate(-90deg);
+      position: absolute;
+      top: 0;
+      left: -10px;
+      background-position: center;
+      content: '';
+      display: inline-block;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.bookings {
+  &.arrow-right {
+    &:after {
+      top: 65px;
+    }
+  }
+}
+
+.stock {
+  padding-top: 50px;
+
+  img {
+    height: 20px;
+  }
+
+  &.arrow-right {
+    &:after {
+      top: 40px;
+    }
+  }
+
+  &.arrow-down-small {
+    &:before {
+      content: '';
+      display: inline-block;
+      background: url('../../../../images/dashboard/ic_arrow-up-small.png') no-repeat center;
+      width: 28px;
+      height: 40px;
+      transform: rotate(180deg);
+      position: absolute;
+      bottom: -36px;
+      right: 53px;
+      background-size: 20px;
+    }
+  }
+}
+
+.stock-jone {
+  padding-top: 10px;
+
+  img {
+    height: 20px;
+  }
+
+  .link {
+    position: relative;
+
+    &:after {
+      content: attr(data-text);
+      position: absolute;
+      right: -53px;
+      color: currentColor;
+      text-transform: capitalize;
+      display: block;
+      width: 70px;
+      z-index: 1;
+      font-size: 12px;
+      top: -5px;
+      text-align: left;
+      font-weight: 600;
+    }
+  }
+}
+
+.jobs {
+  margin-top: -25px;
+  &.arrow-up {
+    &:before {
+      background-size: 15px;
+      background-position: top center;
+    }
+  }
+}
+
+.quotes {
+  margin-top: -50px;
+
+  img {
+    height: 35px;
+  }
+
+  .link {
+    position: relative;
+
+    &:after {
+      content: attr(data-text);
+      position: absolute;
+      right: -136px;
+      color: currentColor;
+      text-transform: capitalize;
+      display: block;
+      width: 130px;
+      z-index: 1;
+      font-size: 14px;
+      top: -5px;
+      text-align: left;
+      font-weight: 600;
+    }
+  }
+}
+
+.text-yellow {
+  color: #FFEB3B;
+  font-weight: bold;
+
+  &:hover, &:focus {
+    color: darken(#FFEB3B, 0.5);
+  }
+}
+
+.text-blue {
+  color: #24e6ff;
+}
+
+.text-green {
+  color: #00ff2b;
+}
+
+.remittance {
+  margin-left: 50px;
+  margin-top: -20px;
+
+  .arrow-left {
+    &:after {
+      content: '';
+      display: inline-block;
+      background: url('../../../../images/dashboard/ic_arrow-left.png') no-repeat center;
+      width: 70px;
+      height: 28px;
+      position: absolute;
+      left: -74px;
+      top: 20px;
+      transform: rotate(-10deg);
+      background-size: 63px;
+    }
+  }
+}
+
+.billing {
+  &.arrow-bottom-up {
+    &:after {
+      background-image: url("../../../../images/dashboard/ic_arrow-left-medium.png");
+      width: 140px;
+      height: 28px;
+      content: '';
+      background-repeat: no-repeat;
+      display: inline-block;
+      transform: rotate(40deg);
+      position: absolute;
+      bottom: -75px;
+      right: -95px;
+      background-size: 100px;
+    }
+  }
+}
+
+.installation {
+  &.arrow-bottom-up {
+    &:after {
+      background-image: url("../../../../images/dashboard/ic_arrow-left-medium.png");
+      width: 140px;
+      height: 28px;
+      content: '';
+      background-repeat: no-repeat;
+      display: inline-block;
+      transform: rotate(135deg);
+      position: absolute;
+      bottom: -45px;
+      right: -55px;
+      background-size: 100px;
+    }
+  }
+}
+
+.jobs {
+  &.arrow-bottom-up {
+    &:after {
+      background: url("../../../../images/dashboard/ic_arrow-left-medium.png") no-repeat center;
+      width: 140px;
+      height: 28px;
+      content: '';
+      display: inline-block;
+      transform: rotate(-150deg);
+      position: absolute;
+      bottom: -10px;
+      right: -80px;
+      background-size: 100px;
+    }
+  }
+}
+
+.action {
+  &.arrow.arrow-up-right:after {
+    right: -10px;
+    top: -50px;
+    transform: rotate(-125deg);
+  }
+}
+
+.delivered-orders {
+  padding-top: 50px;
+
+  &.arrow.arrow-up-right {
+    &:after {
+      bottom: -65px;
+      left: -25px;
+      top: auto;
+      right: auto;
+    }
+  }
+}
+
+.stock-jone {
+  &.arrow.arrow-right-medium {
+    &:after {
+      left: -180px;
+      right: auto;
+      top: 15px;
+    }
+  }
+}
+
+.purchase-order, .bookings, .action {
+  img {
+    height: 20px;
+  }
+}
+
+.height-30 {
+  height: 30px !important;
+}
+
+.height-25 {
+  height: 25px !important;
+}
+
+.col-xsmall-1 {
+  width: 106px;
+  max-width: 100%;
+  flex-basis: auto;
+}
+
+.col-xsmall-2 {
+  width: 158px;
+  max-width: 100%;
+  flex-basis: auto;
+}
+
+.col-xsmall-9 {
+  width: 958px;
+  max-width: 100%;
+  flex-basis: auto;
+}
